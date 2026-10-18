@@ -49,7 +49,7 @@ function glifo(_x, _y, _size) {
   push();
   translate(_x, _y);
 
-  // 1. STELLE GRANDI SFONDO 
+  // STELLE GRANDI SFONDO 
   let sceltaPunteG = floor(random(3));
   let punteGrande = 6;
   if (sceltaPunteG === 0) {
@@ -79,7 +79,7 @@ let sceltaDimG = floor(random(3));
     fill(255, 221, 0);   // Giallo 
   }
 
-  // Rotazione lenta e uniforme in senso antiorario (-)
+  // Rotazione senso antiorario (-)
   let rotazioneInizialeG = random(360);
   push();
   rotate(rotazioneInizialeG - (frameCount * 0.3)); 
@@ -87,7 +87,7 @@ let sceltaDimG = floor(random(3));
   pop();
 
 
-  // 2. STELLE PICCOLE centrali
+  // 2. STELLE PICCOLE in primo piano
   let sceltaPunteP = floor(random(3));
   let puntePiccola = 4;
   if (sceltaPunteP === 0) {
@@ -118,7 +118,7 @@ let sceltaDimG = floor(random(3));
     fill(0, 229, 255);   // Azzurro 
   }
 
-  // Rotazione  rotazione lenta e uniforme in senso orario (+)
+  // Rotazione in senso orario (+)
   let rotazioneInizialeP = random(360);
   push();
   rotate(rotazioneInizialeP + (frameCount * 0.2));
@@ -129,7 +129,7 @@ let sceltaDimG = floor(random(3));
 }
 
 
-// 3. FUNZIONE PERSONALIZZATA AUSILIARIA
+// funzione di supporto
 function disegnaStella(_punte, _rEst, _rInt) {
   let pasAngolo = 360 / _punte;
   for (let i = 0; i < _punte; i++) {
