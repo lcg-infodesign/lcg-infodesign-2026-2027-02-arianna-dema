@@ -12,7 +12,7 @@ function draw() {
   angleMode(DEGREES);
   noStroke();
 
-  let numeroglifi = 80; // Griglia 8x10
+  let numeroglifi = 64; // Griglia 8x8
   let colonne = ceil(sqrt(numeroglifi));
   let righe = sqrt(numeroglifi);
   let discolonna = windowWidth / colonne;
