@@ -59,9 +59,8 @@ function glifo(_x, _y, _size) {
   } else {
     punteGrande = 8;
   }
-
-  let sceltaDimG = floor(random(3));
-  let sfondoG = _size * 0.70;
+let sceltaDimG = floor(random(3));
+  let rEsternoG = _size * 0.70; 
   if (sceltaDimG === 0) {
     rEsternoG = _size * 0.50;
   } else if (sceltaDimG === 1) {
